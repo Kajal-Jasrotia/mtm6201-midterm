@@ -327,9 +327,8 @@ color: blue;
 }
 
 .zero {
-    display: flex; /* Use flexbox */
+    display:flex; /* Use flexbox */
 }
-
 .zero p {
 margin-top:3%;
 margin-left:20%;
@@ -392,16 +391,30 @@ margin-left:20%;
 .ghana img{
     border-radius: 6%;
 }
+.ghana h1{
+    font-size:30px;
+    text-decoration:underline #041c33;
+}
+.joy{
+
+    padding:50px;
+}
+
 .zero p:first-of-type {
     color: grey;  
 }
 .zero p:first-of-type {
-    
     text-decoration: line-through; /* Apply line-through decoration to the first paragraph */
+    font-size:13px;
 }
 
 
 .zero p:last-of-type {
     color: #7cbbf6;
-    font-size:25px;
+    font-size:18px;
 }
+ 
+  
+
+
+    
