@@ -1,0 +1,407 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;/*differnt font used for the whole body*/
+    height:100vh;
+    
+}
+.center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%); /*used animation property for the div*/
+    width:  400px;
+    background: white;
+    
+}
+.center h1{
+text-align:left;
+padding:0 0 20px 0;
+margin-left:50px;
+font-size: 40px;
+}
+.center p{
+font-size:14px;
+text-align:left;
+padding:0 0 20px 0;
+margin-left:50px;
+margin-top: -30px; /* Adjust the margin-top value as needed */
+
+}
+.center span{
+font-size:50px;
+text-align:left;
+padding:0 0 20px 0;
+margin-left:40px;
+}
+.center form{
+    padding:0 40px;
+    box-sizing: border-box;
+}
+form .helo{
+position: relative;
+border-bottom:2px solid #adadad;
+margin: 30px 0;
+}
+.helo input{
+   width:100%;
+   padding:0 5px;
+   height:30px;
+   font-size:16px;
+   border:none;
+   background:none;
+   outline:none;
+}
+.helo label{
+    position: absolute;
+    top:50%;
+    left:15px;
+    color:#adadad;
+    transform: translateY(-50%);
+    font-size:16px;
+    pointer-events:none;
+    transition:0.5s;
+}
+.helo span::before{
+    content: '';
+    position:absolute;
+    top:40px;
+    left:0;
+    width:100%;
+    height:2px;
+    background: rgb(8, 89, 229);
+    transition: .5s;
+    
+}
+.helo input:focus ~ label,
+.helo input:valid ~ label{
+    top:-5px;
+    color: rgb(8, 89, 229);
+}
+.helo input:focus ~ span::before,
+.helo input:valid ~ span::before{
+    width:100%;
+    color: rgb(8, 89, 229);
+}
+.for{
+    margin: -5px 0 20px 5px;
+    color: black;
+    cursor:pointer;
+    font-size:14px;
+    text-align: end;
+    position:absolute;
+    right: 20px;
+    top:95.5% ;
+}
+.for:hover{
+    text-decoration:underline;
+}
+.forgot-remember{
+color:#100f0f;
+margin-right: 20px;
+font-size:14px;
+}
+
+input[type="submit"]{
+    display:grid;
+    position:absolute;
+    width:90%;
+    height:50px;
+    border:1px solid;
+    background: rgb(8, 89, 229);
+    border-radius:15px;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    outline:none;
+    margin-top: 50px; /* Adjust the margin as needed */
+}
+input[type="submit"]:hover{
+    border-color:rgb(8, 89, 229);
+    transition: .4s;  /*Here transition is used to put animation on input*/
+}
+/*here starts the css for home.html and about.html*/
+
+
+.welcome{
+    margin-left:5%;
+    position: relative;
+}
+.welcome img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 70%;
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover;
+}
+.welcome h1{
+    text-align: center;
+font-size: 40px;
+margin-top: 15%; 
+}
+.welcome h2{
+    text-align: center;
+   font-size:40px;
+   margin-left: 5px;
+}
+.welcome p{
+    text-align: center;
+    margin-top:2%;
+    color: #adadad;
+}
+.buttons {
+    text-align: center;
+    margin-top:50px;
+    border:none;
+}
+
+.buttons a {
+    margin-right: 40px;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.buttons button {
+    padding: 15px 30px; /* Adjust the padding values to increase the size */
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size:17px;
+    font-weight: bold; /* Set font-weight to bold */
+}
+
+.buttons button:hover {
+    background-color:rgb(8, 89, 229);
+    color:#eef0f3;
+}
+.trend,
+.raise,
+.san,
+.channel {
+    text-align: left;
+    border-bottom: 2px solid #adadad;
+    max-width: 80%; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the element */
+    }
+.trend a,
+.raise a,
+.san a,
+.channel a {
+    text-decoration: none;
+    }
+
+.trend p,
+.san p,
+.raise h4 {
+    color:grey;
+    }
+    
+.trend h2,
+.raise h4,
+.raise p,
+.raise h2,
+.san h2,
+.channel h2,
+.channel h4,
+.channel p {
+    color: black;
+}
+.trend h2:hover,
+.raise h2:hover,
+.san h2:hover,
+.channel h2:hover {
+    color: rgb(70, 70, 255); /* Change the color to your desired color */
+}
+.channel h2{
+    margin-bottom: 20%;
+}
+.profile {
+    display:flex;
+    width: 50px; /* Adjusting the size of the profile picture container */
+    align-items: center;
+}
+
+.profile img {
+    width: 100%;
+    height: auto;
+    border-radius: 70%; /* Make the image circular */
+    margin-right:10px;
+}
+.profile name{
+    margin: 0; 
+    font-size: 20px; 
+}
+
+.btn{
+    position:fixed;
+    text-align: center;
+    bottom: 20px;
+    right: 40%;
+    z-index: 999;
+}
+.btn a {
+    margin-right: 40px;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.btn button {
+    padding: 15px 30px; 
+    border: none;
+    background-color: rgb(169, 195, 238);
+   color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size:17px;
+    font-weight: bold;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);  
+}
+
+.btn button:hover {
+    background-color:rgb(8, 89, 229);
+    transition:0.5s;
+}
+
+
+.arrow span{
+    font-size:50px;
+    color:#100f0f;
+}
+.footerContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; 
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);  
+   
+}
+.Icons a{
+    text-decoration: none;
+}
+
+.Icons {
+    display: flex;
+    justify-content: space-around; 
+    flex-direction:row;
+    align-items: center;
+    padding: 1px 0;
+    margin-top:5px;
+    text-decoration: none;
+    z-index: 1000;
+ }
+ .material-symbols-outlined{
+    color: #100f0f;
+
+ }
+ .material-symbols-outlined:hover{
+color: blue;
+ }
+.Icons p{
+    margin-top: 5px; 
+    font-size: 12px; 
+    text-align: center;
+    color: #100f0f;
+}
+
+.profile a {
+    text-decoration: none; /* Remove underline from the link */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+    color:#100f0f;
+}
+.profile a:hover{
+color: blue;
+}
+
+
+.profile img {
+    margin-right: 10px; /* Add some margin between the image and the paragraph */
+    width: 50px;
+  
+}
+
+.zero {
+    display: flex; /* Use flexbox */
+}
+
+.zero p {
+margin-top:3%;
+margin-left:20%;
+}
+.raise p {
+    float: left; /* Float the paragraphs to the left */
+    margin-top:-35px;
+    margin-left:40%;
+    margin-bottom:30px;
+    
+}
+.raise h4,
+.raise p:first-of-type {
+    color: grey; /* Set the color of h4 and the first paragraph to grey */
+    font-size:13px;
+}
+
+.raise p:last-of-type {
+    color: #7cbbf6;
+    font-size:18px;
+}
+.raise p:first-of-type {
+    text-decoration: line-through; /* Apply line-through decoration to the first paragraph */
+}
+.channel p {
+    float: left; /* Float the paragraphs to the left */
+    margin-top:-35px;
+    margin-left:40%;
+    margin-bottom:30px;
+    color:  #7cbbf6;
+}
+.channel h4,
+.channel p:first-of-type {
+    color: grey;  
+}
+.channel p:first-of-type {
+    text-decoration: line-through; /* Apply line-through decoration to the first paragraph */
+    font-size:13px;
+}
+
+
+.channel p:last-of-type {
+    color: #7cbbf6;
+    font-size:18px;
+}
+
+.channel img{
+    border-radius: 6%;
+}
+.raise img{
+    border-radius: 6%;
+}
+.san img{
+    border-radius: 6%;
+}
+.trend img{
+    border-radius: 6%;
+}
+
+.ghana img{
+    border-radius: 6%;
+}
+.zero p:first-of-type {
+    color: grey;  
+}
+.zero p:first-of-type {
+    
+    text-decoration: line-through; /* Apply line-through decoration to the first paragraph */
+}
+
+
+.zero p:last-of-type {
+    color: #7cbbf6;
+    font-size:25px;
+}
